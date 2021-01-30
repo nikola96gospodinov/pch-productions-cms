@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/photography",
+      "handler": "photography.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/photography",
+      "handler": "photography.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/photography",
+      "handler": "photography.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

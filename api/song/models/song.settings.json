@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "songs",
+  "info": {
+    "name": "Song",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "SongName": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "SpotifyLink": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "YoutubeLink": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "InstagramLink": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "AppleMusicLink": {
+      "type": "string",
+      "default": "N/A"
+    }
+  }
+}
