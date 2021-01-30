@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "videos",
   "info": {
-    "name": "Video"
+    "name": "Video",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "Link": {
